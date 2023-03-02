@@ -1,0 +1,10 @@
+Inicie
+Exiba "Bem vindo ao calculador de area do paralelogramo"
+Peça o comprimento da base
+Armazene esse comprimento
+Peça a altura
+Armazene a altura
+Calcule a area do paralelogramo = base * altura
+Armazene o resultado
+Exiba o resultado
+Fim
