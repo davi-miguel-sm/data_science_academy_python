@@ -1,0 +1,6 @@
+print(float(39))
+print(int(3.9))
+print(hex(13))
+print(bin(56))
+print(abs(-5359))
+print(round(3.1874852949,2))
