@@ -1,10 +1,20 @@
+// Calcular area paralelogramo
 Inicie
-Exiba "Bem vindo ao calculador de area do paralelogramo"
-Peça o comprimento da base
-Armazene esse comprimento
-Peça a altura
-Armazene a altura
-Calcule a area do paralelogramo = base * altura
-Armazene o resultado
-Exiba o resultado
+    Exiba "Bem vindo ao calculador de area do paralelogramo"
+    Peça o comprimento da base
+    Armazene esse comprimento
+    Peça a altura
+    Armazene a altura
+    Calcule a area do paralelogramo = base * altura
+    Armazene o resultado
+    Exiba o resultado
+Fim
+
+// Algoritmo de ordenação bubble sort
+Inicio
+    para cada elemento no array de tamanho no
+        para cada elemento j no array de tamanho n-1
+            se elemento i for maior que elemento j
+                troque os elementos i e j
+    exiba o array ordenado
 Fim
