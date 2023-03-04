@@ -3,4 +3,11 @@ lista_1 = ['arroz, frango, tomate, leite']
 print(type(lista_1))
 
 lista_2 = ['arroz', 'frango', 'tomate', 'leite']
-print(type(lista_1))
+print(type(lista_2))
+
+lista_3 = [23,100,'Data Science']
+print(type(lista_3))
+
+item1 = lista_3[0]
+item2 = lista_3[1]
+item3 = lista_3[2]
