@@ -11,3 +11,7 @@ print(type(lista_3))
 item1 = lista_3[0]
 item2 = lista_3[1]
 item3 = lista_3[2]
+
+lista_2[2] = 'Chocolate'
+del lista_2[3]
+print(lista_2)
