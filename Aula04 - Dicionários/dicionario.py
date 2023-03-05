@@ -31,4 +31,5 @@ dict_lists = {"key_1":["username","password"], "key_2":["username","password"]}
 print(dict_lists["key_1"][1].upper()) #Acesso ao item da lista dentro chave
 
 #Dicionários aninhados
-dict_dicts = {"dict_1":{"dict_2_0":{"nome":"idade"}, "dict_2_1":{"endereço":"cep"}}}
+dict_dicts = {"dict_1":{"dict_1_0":{"nome":"idade"}},"dict_2":{ "dict_2_0":{"endereço":"cep"}}}
+print(dict_dicts["dict_2"]["dict_2_0"])
