@@ -29,3 +29,6 @@ print(idade_ana)
 
 dict_lists = {"key_1":["username","password"], "key_2":["username","password"]}
 print(dict_lists["key_1"][1].upper()) #Acesso ao item da lista dentro chave
+
+#Dicionários aninhados
+dict_dicts = {"dict_1":{"dict_2_0":{"nome":"idade"}, "dict_2_1":{"endereço":"cep"}}}
