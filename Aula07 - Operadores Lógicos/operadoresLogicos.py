@@ -10,3 +10,10 @@ if num > 10 or num <15:
     print("Docin de maracujá")
 else:
     print("Pimenta malagueta")
+
+#not - Inverte o valor lógico da expressão
+
+if not(num>10 or num <15):
+    print("Docin de maracujá")
+else:
+    print("Pimenta malagueta")
