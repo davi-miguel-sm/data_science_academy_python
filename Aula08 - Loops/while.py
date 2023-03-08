@@ -12,5 +12,6 @@ while valor >= 10:
     if valor == 11:
         break
     if valor == 44:
-        continue
+        pass
+        # continue
     print(valor)
