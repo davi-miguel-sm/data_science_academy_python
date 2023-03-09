@@ -26,3 +26,7 @@ pot = lambda num: num ** 2
 
 print(potencia(10))
 print(pot(10))
+
+reversoUpper = lambda valor: valor.upper()[::-1]
+
+print(reversoUpper("Davi Miguel de Sousa Machado"))
