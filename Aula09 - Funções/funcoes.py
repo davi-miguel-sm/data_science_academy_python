@@ -1,0 +1,22 @@
+def funcao():
+    print("Hello World")
+
+funcao()
+
+def imprime(valor):
+    print(valor)
+
+lista = [1, 2, 3, 4, 5, 6]
+imprime(lista)
+
+def retornaMaior(lista):
+    maior = 0
+    i = 0
+    while i < len(lista):
+        if lista[i] > maior:
+            maior = lista[i]
+        i += 1
+    return maior
+
+maior = retornaMaior(lista)
+print(maior)
