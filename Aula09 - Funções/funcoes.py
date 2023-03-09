@@ -20,3 +20,9 @@ def retornaMaior(lista):
 
 maior = retornaMaior(lista)
 print(maior)
+
+def potencia(num): return num ** 2
+pot = lambda num: num ** 2
+
+print(potencia(10))
+print(pot(10))
