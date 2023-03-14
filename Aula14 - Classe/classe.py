@@ -57,12 +57,9 @@ class Cachorro(Animal):
     def __init__(self):
         Animal.__init__(self)
         print("Cachorro Criado.")
-
-    def imprimir(self):
-        return Animal.imprimir()
     
     def emitir_som(self):
         print("Au Au.")
     
 rex = Cachorro()
-rex.imprimir
+rex.comer()
