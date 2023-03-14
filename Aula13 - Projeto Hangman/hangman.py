@@ -55,4 +55,5 @@ def game():
     else:
         texto_inicial(traços_letras, chances, letras_erradas)
         print("VOCÊ FOI ELIMINADO!!!")
+        print(f"A JUSTIÇA SERIA FEITA COM: {palavra}!")
 game()
