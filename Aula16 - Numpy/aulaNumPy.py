@@ -65,3 +65,16 @@ array_4d = np.array([[[np.linspace(0,3,13),np.linspace(0,6,13)],[np.linspace(0,9
 import os
 
 filename = os.path.join('dataset.csv')
+array_arqi = np.loadtxt(filename, delimiter=',', usecols=(0,1,2,3),skiprows=1)
+# print(array_arqi)
+# print(type(array_arqi))
+
+#destructuring
+largura,altura = np.loadtxt(filename, delimiter=',',usecols=(0,1),skiprows=1,unpack=True)
+print(f'{largura.min()}\n******\n{altura.max()}')
+
+#plotando gráfico com numpy e matplotlib
+import matplotlib
+matplotlib.use('WebAgg')
+import matplotlib.pyplot as plt
+plt.show(plt.plot(largura,altura,'o',markesize=6,color='red'))
