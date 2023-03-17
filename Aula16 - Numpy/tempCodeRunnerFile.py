@@ -1,1 +1,0 @@
-matriz1[0] = linha

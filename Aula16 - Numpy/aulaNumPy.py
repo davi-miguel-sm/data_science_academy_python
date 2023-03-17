@@ -47,4 +47,21 @@ array_logspc = np.logspace(0,3,4) #Espaçados de forma logarítimica
 #np.array =>Analise de dados | np.matrix => Cálculos
 
 matrix1 = np.matrix([np.linspace(0,3,13),np.linspace(0,6,13)])
-print(matrix1, type(matrix1))
+#print(matrix1, type(matrix1))
+
+#Objetos 3d e 4d
+
+array_3d = np.array([[np.linspace(0,3,13),np.linspace(0,6,13),np.linspace(0,9,13)],[np.linspace(0,9,13),np.linspace(0,6,13),np.linspace(0,3,13)]])
+#print(array_3d)
+#print(array_3d.shape)
+#print(array_3d.ndim)
+
+array_4d = np.array([[[np.linspace(0,3,13),np.linspace(0,6,13)],[np.linspace(0,9,13),np.linspace(0,6,13)]],[[np.linspace(0,3,13),np.linspace(0,6,13)],[np.linspace(0,9,13),np.linspace(0,6,13)]]])
+# print(array_4d)
+# print(array_4d.shape)
+# print(array_4d.ndim)
+
+#Manipulando arquivos
+import os
+
+filename = os.path.join('dataset.csv')
