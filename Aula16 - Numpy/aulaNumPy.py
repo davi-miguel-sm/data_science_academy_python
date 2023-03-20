@@ -64,7 +64,7 @@ array_4d = np.array([[[np.linspace(0,3,13),np.linspace(0,6,13)],[np.linspace(0,9
 #Manipulando arquivos
 import os
 
-filename = os.path.join('dataset.csv')
+filename = os.path.join('Aula16 - Numpy\dataset.csv')
 array_arqi = np.loadtxt(filename, delimiter=',', usecols=(0,1,2,3),skiprows=1)
 # print(array_arqi)
 # print(type(array_arqi))
@@ -85,8 +85,28 @@ array_media = np.array(np.linspace(0,9,41))
 
 #Calculando Variância
 array_variancia = np.array(np.linspace(0,9,41))
-print(f"{array_variancia.var():.4f}") # Variância do Array (Média do Quadrado da Diferença do Valor dos Elementos para a Média Aritmética)
+# print(f"{array_variancia.var():.4f}") # Variância do Array (Média do Quadrado da Diferença do Valor dos Elementos para a Média Aritmética)
 
 #Calculando Desvio Padrão
 array_dsvpdr = np.array(np.linspace(0,9,41))
-print(f"{array_variancia.std():.4f}") # Desvio Padrão do Array (Raiz Quadrada da Variância) std = standard deviation
+# print(f"{array_variancia.std():.4f}") # Desvio Padrão do Array (Raiz Quadrada da Variância) std = standard deviation
+
+#Operações Matemáticas com Numpy
+array_op = np.arange(1,11)
+# print(array_op.sum()) # Soma os valores
+# print(array_op.cumsum()) # Soma acumulada
+# print(array_op.prod()) # Produto dos valores
+# print(array_op.cumprod()) # Produto Acumulado
+
+array_somado = np.add(np.linspace(0,9,41),np.linspace(0,3,41)) # Soma dois arrays
+# print(array_somado)
+
+matrix_produt1 = np.array([[1000,2000,3000],[4000,5000,6000]])
+matrix_produt2 = np.array([[2,3],[2,3],[2,3]])
+# print(matrix_produt1)
+# print(matrix_produt2)
+matrix_prod = np.dot(matrix_produt1,matrix_produt2)
+matrix_prod1 = matrix_produt1 @ matrix_produt2
+print(matrix_prod == matrix_prod1)
+
+  
