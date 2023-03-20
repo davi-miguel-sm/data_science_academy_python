@@ -74,9 +74,9 @@ largura,altura = np.loadtxt(filename, delimiter=',',usecols=(0,1),skiprows=1,unp
 # print(f'{largura.min()}\n******\n{altura.max()}')
 
 #plotando gráfico com numpy e matplotlib
-import matplotlib
-matplotlib.use('WebAgg')
-import matplotlib.pyplot as plt
+# import matplotlib
+# matplotlib.use('WebAgg')
+# import matplotlib.pyplot as plt
 # plt.show(plt.plot(largura,altura,'o',markesize=6,color='red'))
 
 #Calculando Média
@@ -109,6 +109,13 @@ matrix_prod = np.dot(matrix_produt1,matrix_produt2)
 matrix_prod1 = matrix_produt1 @ matrix_produt2
 # print(matrix_prod == matrix_prod1)
 
-#slicing matrizes
+#slicing arrays e matrizes
 array_slicing = np.diag(np.arange(3))
-print(array_slicing)
+# print(array_slicing)
+
+print(array_slicing[::-1,0:2])
+
+array_slicing2 = np.arange(11)
+print(array_slicing2[0:11:2])
+print(array_slicing2[-2:0:-2])
+print(array_slicing2[0:4] **2)
