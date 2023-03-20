@@ -78,3 +78,5 @@ import matplotlib
 matplotlib.use('WebAgg')
 import matplotlib.pyplot as plt
 plt.show(plt.plot(largura,altura,'o',markesize=6,color='red'))
+
+#Calculando Média
