@@ -111,11 +111,20 @@ matrix_prod1 = matrix_produt1 @ matrix_produt2
 
 #slicing arrays e matrizes
 array_slicing = np.diag(np.arange(3))
-# print(array_slicing)
-
+# Metódo diag cria uma matriz preenchida na diagonal
 print(array_slicing[::-1,0:2])
 
 array_slicing2 = np.arange(11)
 print(array_slicing2[0:11:2])
 print(array_slicing2[-2:0:-2])
 print(array_slicing2[0:4] **2)
+
+array_slicing3 = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+# Metódo FLatten converte array multidimensional em unidirecional
+print(array_slicing3.flatten())
+#Metódo repeat repete os elementos do array n vezes
+print(array_slicing3.flatten()[0:5].repeat(2))
+#Metódo tile repete o array n vezes
+print(np.tile(array_slicing3.flatten()[0:5],2))
+#Metódo copy cria uma cópia do array
+print(np.copy(array_slicing3.flatten()[0:5]))
