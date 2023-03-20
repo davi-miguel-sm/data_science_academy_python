@@ -86,3 +86,7 @@ array_media = np.array(np.linspace(0,9,41))
 #Calculando Variância
 array_variancia = np.array(np.linspace(0,9,41))
 print(f"{array_variancia.var():.4f}") # Variância do Array (Média do Quadrado da Diferença do Valor dos Elementos para a Média Aritmética)
+
+#Calculando Desvio Padrão
+array_dsvpdr = np.array(np.linspace(0,9,41))
+print(f"{array_variancia.std():.4f}") # Desvio Padrão do Array (Raiz Quadrada da Variância) std = standard deviation
