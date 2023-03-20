@@ -71,12 +71,18 @@ array_arqi = np.loadtxt(filename, delimiter=',', usecols=(0,1,2,3),skiprows=1)
 
 #destructuring
 largura,altura = np.loadtxt(filename, delimiter=',',usecols=(0,1),skiprows=1,unpack=True)
-print(f'{largura.min()}\n******\n{altura.max()}')
+# print(f'{largura.min()}\n******\n{altura.max()}')
 
 #plotando gráfico com numpy e matplotlib
 import matplotlib
 matplotlib.use('WebAgg')
 import matplotlib.pyplot as plt
-plt.show(plt.plot(largura,altura,'o',markesize=6,color='red'))
+# plt.show(plt.plot(largura,altura,'o',markesize=6,color='red'))
 
 #Calculando Média
+array_media = np.array(np.linspace(0,9,41))
+# print(array_media.mean()) # Média Aritmética  do Array (Soma todos e Divide pelo Número de Elementos)
+
+#Calculando Variância
+array_variancia = np.array(np.linspace(0,9,41))
+print(f"{array_variancia.var():.4f}") # Variância do Array (Média do Quadrado da Diferença do Valor dos Elementos para a Média Aritmética)
