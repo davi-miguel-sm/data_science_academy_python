@@ -107,6 +107,8 @@ matrix_produt2 = np.array([[2,3],[2,3],[2,3]])
 # print(matrix_produt2)
 matrix_prod = np.dot(matrix_produt1,matrix_produt2)
 matrix_prod1 = matrix_produt1 @ matrix_produt2
-print(matrix_prod == matrix_prod1)
+# print(matrix_prod == matrix_prod1)
 
-  
+#slicing matrizes
+array_slicing = np.diag(np.arange(3))
+print(array_slicing)
