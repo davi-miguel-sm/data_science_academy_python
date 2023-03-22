@@ -17,4 +17,13 @@ dataframe2 = pd.DataFrame(
 # print(f'\n{dataframe2.values}')
 # print(f'\n{dataframe2.dtypes}')
 # print(f'\n{dataframe2.columns}')
-print(dataframe2[['Estado','Ano']])
+# print(dataframe2[['Estado','Ano']])
+
+#Metódos
+# print(dataframe2.describe()) # Retorna um resumo estatístico dos valores númericos
+# print(dataframe2.isna()) # Retorna true para valores NaN
+
+import numpy as np
+
+dataframe2['Taxa Crescimento'] = np.arange(4.)[1:4]*1.34
+print(dataframe2.describe())
