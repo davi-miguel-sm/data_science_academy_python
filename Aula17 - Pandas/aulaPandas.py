@@ -26,4 +26,8 @@ dataframe2 = pd.DataFrame(
 import numpy as np
 
 dataframe2['Taxa Crescimento'] = np.arange(4.)[1:4]*1.34
-print(dataframe2.describe())
+# print(dataframe2.describe())
+
+#Slicing Dataframes
+# print(dataframe2['estado_1':'estado_3'])
+print(dataframe2[dataframe2['Taxa de Desemprego']<1.7])
