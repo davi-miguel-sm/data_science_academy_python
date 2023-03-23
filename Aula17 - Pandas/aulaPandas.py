@@ -30,4 +30,12 @@ dataframe2['Taxa Crescimento'] = np.arange(4.)[1:4]*1.34
 
 #Slicing Dataframes
 # print(dataframe2['estado_1':'estado_3'])
-print(dataframe2[dataframe2['Taxa de Desemprego']<1.7])
+# print(dataframe2[dataframe2['Taxa de Desemprego']<1.7])
+
+dataframe3 = pd.read_csv("Aula17 - Pandas\dataset.csv")
+print(dataframe3.head(7))
+print(dataframe3.isna().sum())
+moda = dataframe3['petal_width'].value_counts().index[0]
+print(moda)
+dataframe3['petal_width'].fillna(value = moda, inplace=True)
+print(dataframe3.isna().sum())
