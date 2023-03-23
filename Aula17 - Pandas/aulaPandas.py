@@ -34,11 +34,14 @@ dataframe2['Taxa Crescimento'] = np.arange(4.)[1:4]*1.34
 
 #Preencher Valores Vazios
 dataframe3 = pd.read_csv("Aula17 - Pandas\dataset.csv")
-print(dataframe3.head(7))
-print(dataframe3.isna().sum())
+# print(dataframe3.head(7))
+# print(dataframe3.isna().sum())
 moda = dataframe3['petal_width'].value_counts().index[0]
-print(moda)
+# print(moda)
 dataframe3['petal_width'].fillna(value = moda, inplace=True)
-print(dataframe3.isna().sum())
+# print(dataframe3.isna().sum())
 
 #Consulta de dados - Query - no pandas
+print(dataframe3['petal_width'].describe())
+print(dataframe3.query('1.2 < petal_width < 1.8 '))
+print(dataframe3.query('3 < petal_length < 4'))
