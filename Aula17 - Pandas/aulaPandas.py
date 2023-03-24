@@ -43,6 +43,9 @@ dataframe3['petal_width'].fillna(value = moda, inplace=True)
 
 #Consulta de dados - Query - no pandas
 # print(dataframe3['petal_width'].describe())
-print(dataframe3.query('1.2 < petal_width < 2 & 3 < petal_length < 4') )
+# print(dataframe3.query('1.2 < petal_width < 2 & 3 < petal_length < 4') )
 
 #Operadores Lógicos
+print(dataframe3[(dataframe3.petal_width >= 1.5) & (dataframe3.sepal_length <5.3)])
+print(dataframe3[(dataframe3.petal_width >= 1.5) | (dataframe3.sepal_length <5.3)].tail(4))
+print(dataframe3[(dataframe3.petal_width != 1.5) & (dataframe3.sepal_length !=5.3)].sample(4))
