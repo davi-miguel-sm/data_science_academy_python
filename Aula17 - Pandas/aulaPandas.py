@@ -42,6 +42,7 @@ dataframe3['petal_width'].fillna(value = moda, inplace=True)
 # print(dataframe3.isna().sum())
 
 #Consulta de dados - Query - no pandas
-print(dataframe3['petal_width'].describe())
-print(dataframe3.query('1.2 < petal_width < 1.8 '))
-print(dataframe3.query('3 < petal_length < 4'))
+# print(dataframe3['petal_width'].describe())
+print(dataframe3.query('1.2 < petal_width < 2 & 3 < petal_length < 4') )
+
+#Operadores Lógicos
