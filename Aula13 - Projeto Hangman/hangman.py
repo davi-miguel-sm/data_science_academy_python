@@ -6,6 +6,10 @@ print(conteudo)
 import random
 from os import system,name
 
+def boas_vindas():
+    print("\nBem Vindo ao Jogo da Forca.\n")
+    print("\nQue os jogos comecem!\n")
+
 def limpa_tela():
     if name =='nt':
         _ = system('cls')
@@ -24,8 +28,8 @@ def calcula_chances(palavra):
 def game():
     limpa_tela()
 
-    print("\nBem Vindo ao Jogo da Forca\n")
-    print("\nQue os jogos comecem!\n")
+    boas_vindas()
+
     palavras_forca = conteudo
     palavra = random.choice(palavras_forca)
 
