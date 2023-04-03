@@ -1,0 +1,1 @@
+Capitulo desenvolvido utilizando o google colab para garantir a visualização dos gráficos de forma correta.
